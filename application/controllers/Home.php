@@ -30,8 +30,7 @@ class Home extends CI_Controller {
         } else {
             $agent = 'Other';
         }
-
-        $cek_ip = $this->M_crud->read_data("visitor", "COUNT(ip_visitor) AS jml", array("ip_visitor" => $user_ip));
+        $cek_ip = $this->M_crud->read_data("visitor", "COUNT(ip_visitor) AS jml", "ip_visitor='".$user_ip."' and DATE(date_visitor)=CURRENT_DATE()");
         $isExist = $cek_ip[0]['jml'];
         if ($isExist == 0) {
             $this->M_crud->create_data("visitor", array(

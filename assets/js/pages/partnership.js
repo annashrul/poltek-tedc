@@ -1,6 +1,6 @@
 
 
-function load_data(page, data = {}) {
+function load_data(page, data) {
 	_ajax("read/" + page, data, function (res) {
 		$("#result-table").html(res.result_table);
 		$("#pagination_link").html(res.pagination_link);
@@ -21,8 +21,8 @@ function add() {
 
 $(`#form_input`).validate({
 	rules: {
-		name: {required: true},
-		id_vocational: {required: true},
+		title: {required: true},
+		id_vocational: {required: true}
 	},
 	errorPlacement: handleError(),
 	submitHandler: function (form) {

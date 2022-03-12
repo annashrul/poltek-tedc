@@ -92,8 +92,7 @@
         'assets/plugin/' ?>price-format/jquery.price_format.js"></script>
     <script src="<?= base_url() .
         'assets/plugin/' ?>price-format/jquery.price_format.min.js"></script>
-    <script src="<?= base_url() .
-        'assets/plugin/' ?>ckeditor/ckeditor.js"></script>
+    <script src="<?= base_url() .'assets/plugin/' ?>ckeditor/ckeditor.js"></script>
     <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
 
     <script type="text/javascript" src="<?=base_url().'assets/'?>assets/magnific-popup/magnific-popup.js"></script> 
